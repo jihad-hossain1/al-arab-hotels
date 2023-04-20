@@ -1,0 +1,32 @@
+https://i.ibb.co/dc97pMY/1-1.jpg /
+https://i.ibb.co/F3p7MZZ/1-2.jpg /
+https://i.ibb.co/YBdwgTc/1-3.jpg /
+https://i.ibb.co/KrTNCqd/1-4.jpg /
+https://i.ibb.co/10qxCmj/1-5.jpg /
+https://i.ibb.co/KxzbXpW/1-6.jpg /
+https://i.ibb.co/4g2Tqn5/1-7.jpg / 
+https://i.ibb.co/Np85jBJ/1-8.jpg /
+https://i.ibb.co/bRQ96TM/1-9.jpg /
+https://i.ibb.co/yR4ygDF/1-10.jpg /
+https://i.ibb.co/1f59qpW/1-11.jpg /
+https://i.ibb.co/SmW3RjC/1-12.jpg /
+https://i.ibb.co/ZMrbFmF/1-13.jpg /
+https://i.ibb.co/7J1zJqM/1-14.jpg /
+https://i.ibb.co/60vzVcq/1-15.jpg
+https://i.ibb.co/RSPz4mN/1-16.jpg
+https://i.ibb.co/SPZ0NZq/1-17.jpg
+https://i.ibb.co/6Fbgmrm/1-18.jpg
+
+
+bg-img 
+https://i.ibb.co/h9Dm6nk/bg.jpg
+
+https://i.ibb.co/0c1bGjP/marvin-meyer-8-CDu-HXff3zo-unsplash.jpg
+
+
+bg style;
+style={{
+            backgroundImage: `url('https://i.ibb.co/0c1bGjP/marvin-meyer-8-CDu-HXff3zo-unsplash.jpg')`,
+            backgroundReapeat: 'no-reapeat'
+
+        }}

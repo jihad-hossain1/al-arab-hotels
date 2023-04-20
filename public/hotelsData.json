@@ -1,0 +1,432 @@
+[
+  {
+    "hotel_id": 1,
+    "hotel_name": "Grand Hotel",
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001",
+      "country": "USA"
+    },
+    "description": "A luxurious hotel in the heart of New York City",
+    "amenities": [
+      "Swimming pool",
+      "Fitness center",
+      "Spa",
+      "Restaurant",
+      "Bar"
+    ],
+    "price_per_night": 250.00,
+    "rating": 4.5,
+    "image_url": "https://i.ibb.co/dc97pMY/1-1.jpg",
+    "rooms": [
+      {
+        "room_type": "Single Bed",
+        "price_per_night": 150.00
+      },
+      {
+        "room_type": "Double Bed",
+        "price_per_night": 200.00
+      },
+      {
+        "room_type": "Family Pack",
+        "price_per_night": 350.00
+      }
+    ]
+  },
+  {
+    "hotel_id": 2,
+    "hotel_name": "Beach Resort",
+    "address": {
+      "street": "456 Ocean Blvd",
+      "city": "Miami",
+      "state": "FL",
+      "zip": "33139",
+      "country": "USA"
+    },
+    "description": "A tropical paradise on the beach in Miami",
+    "amenities": [
+      "Beach access",
+      "Swimming pool",
+      "Tennis courts",
+      "Spa",
+      "Restaurant",
+      "Bar"
+    ],
+    "price_per_night": 350.00,
+    "rating": 4.0,
+    "image_url": "https://i.ibb.co/F3p7MZZ/1-2.jpg",
+    "rooms": [
+      {
+        "room_type": "Single Bed",
+        "price_per_night": 200.00
+      },
+      {
+        "room_type": "Double Bed",
+        "price_per_night": 250.00
+      },
+      {
+        "room_type": "Family Pack",
+        "price_per_night": 450.00
+      }
+    ]
+  },
+  {
+    "hotel_id": 3,
+    "hotel_name": "Mountain Lodge",
+    "address": {
+      "street": "789 Forest Rd",
+      "city": "Aspen",
+      "state": "CO",
+      "zip": "81611",
+      "country": "USA"
+    },
+    "description": "A cozy lodge in the mountains of Aspen",
+    "amenities": [
+      "Skiing",
+      "Snowboarding",
+      "Hot tub",
+      "Restaurant",
+      "Bar"
+    ],
+    "price_per_night": 200.00,
+    "rating": 4.8,
+    "image_url": "https://i.ibb.co/YBdwgTc/1-3.jpg",
+    "rooms": [
+      {
+        "room_type": "Single Bed",
+        "price_per_night": 100.00
+      },
+      {
+        "room_type": "Double Bed",
+        "price_per_night": 150.00
+      },
+      {
+        "room_type": "Family Pack",
+        "price_per_night": 300.00
+      }
+    ]
+  },
+  {
+    "hotel_id": 4,
+    "hotel_name": "The Grand Budapest Hotel",
+    "address": {
+      "street": "1 Grand Budapest St",
+      "city": "Zubrowka",
+      "state": "",
+      "zip": "00000",
+      "country": "Zubrowka"
+    },
+    "description": "Step back in time and experience the elegance and charm of old-world Europe at our hotel located in Zubrowka.",
+    "amenities": [
+      "Spa",
+      "Restaurant",
+      "Bar",
+      "Concierge service",
+      "24-hour front desk",
+      "Free Wi-Fi"
+    ],
+    "price_per_night": 300.00,
+    "rating": 4.9,
+    "image_url": "https://i.ibb.co/KrTNCqd/1-4.jpg"
+  },
+  {
+    "hotel_id": 6,
+    "hotel_name": "Mountain View Lodge",
+    "address": {
+      "street": "2345 Summit Rd",
+      "city": "Banff",
+      "state": "AB",
+      "zip": "T1L 1A3",
+      "country": "Canada"
+    },
+    "description": "Enjoy breathtaking views of the Rocky Mountains at our cozy lodge located in Banff National Park.",
+    "amenities": [
+      "Hiking",
+      "Mountain biking",
+      "Hot tub",
+      "Restaurant",
+      "Bar",
+      "Free Wi-Fi",
+      "Free parking"
+    ],
+    "price_per_night": 200.00,
+    "rating": 4.4,
+    "image_url": "https://i.ibb.co/10qxCmj/1-5.jpg"
+  },
+  {
+    "hotel_id": 7,
+    "hotel_name": "The Plaza",
+    "address": {
+      "street": "768 Fifth Ave",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10019",
+      "country": "USA"
+    },
+    "description": "Experience the luxury and elegance of New York City at our iconic hotel located on Fifth Avenue.",
+    "amenities": [
+      "Spa",
+      "Fitness center",
+      "Restaurant",
+      "Bar",
+      "Concierge service",
+      "24-hour front desk",
+      "Free Wi-Fi"
+    ],
+    "price_per_night": 600.00,
+    "rating": 4.8,
+    "image_url": "https://www.example.com/hotels/the-plaza.jpg"
+  },
+  {
+    "hotel_id": 8,
+    "hotel_name": "Seaside Inn",
+    "address": {
+      "street": "123 Ocean Dr",
+      "city": "Santa Monica",
+      "state": "CA",
+      "zip": "90401",
+      "country": "USA"
+    },
+    "description": "Experience the laid-back lifestyle of Southern California at our cozy inn located in Santa Monica.",
+    "amenities": [
+      "Beach access",
+      "Swimming pool",
+      "Hot tub",
+      "Restaurant",
+      "Bar",
+      "Free Wi-Fi",
+      "Free parking"
+    ],
+    "price_per_night": 275.00,
+    "rating": 4.3,
+    "image_url": "https://i.ibb.co/KxzbXpW/1-6.jpg"
+  },
+  {
+    "hotel_id": 9,
+    "hotel_name": "The Savoy",
+    "address": {
+      "street": "Strand",
+      "city": "London",
+      "state": "",
+      "zip": "WC2R 0EZ",
+      "country": "United Kingdom"
+    },
+    "description": "Experience timeless elegance and sophistication at our historic hotel located in the heart of London.",
+    "amenities": [
+      "Spa",
+      "Fitness center",
+      "Restaurant",
+      "Bar",
+      "Concierge service",
+      "24-hour front desk",
+      "Free Wi-Fi"
+    ],
+    "price_per_night": 550.00,
+    "rating": 4.6,
+    "image_url": "https://i.ibb.co/4g2Tqn5/1-7.jpg"
+  },
+    {
+    "hotel_id": 15,
+    "hotel_name": "The Mandarin Oriental",
+    "address": {
+      "street": "5 Connaught Rd Central",
+      "city": "Hong Kong",
+      "state": "",
+      "zip": "",
+      "country": "Hong Kong"
+    },
+    "description": "Experience the epitome of luxury at our prestigious hotel located in the heart of Hong Kong.",
+    "amenities": [
+      "Spa",
+      "Fitness center",
+      "Infinity pool",
+      "Restaurant",
+      "Bar",
+      "Concierge service",
+      "24-hour front desk",
+      "Free Wi-Fi"
+    ],
+    "price_per_night": 1100.00,
+    "rating": 4.8,
+    "image_url": "https://i.ibb.co/Np85jBJ/1-8.jpg"
+  },
+  {
+    "hotel_id": 16,
+    "hotel_name": "The Peninsula",
+    "address": {
+      "street": "108 E Superior St",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60611",
+      "country": "USA"
+    },
+    "description": "Experience the ultimate in luxury and sophistication at our historic hotel located in the heart of Chicago.",
+    "amenities": [
+      "Spa",
+      "Fitness center",
+      "Indoor pool",
+      "Restaurant",
+      "Bar",
+      "Concierge service",
+      "24-hour front desk",
+      "Free Wi-Fi"
+    ],
+    "price_per_night": 700.00,
+    "rating": 4.7,
+    "image_url": "https://i.ibb.co/bRQ96TM/1-9.jpg"
+  },
+  {
+    "hotel_id": 17,
+    "hotel_name": "Hotel Adlon Kempinski",
+    "address": {
+      "street": "Unter den Linden 77",
+      "city": "Berlin",
+      "state": "",
+      "zip": "10117",
+      "country": "Germany"
+    },
+    "description": "Experience the glamour and luxury of Berlin at our iconic hotel located in the heart of the city.",
+    "amenities": [
+      "Spa",
+      "Fitness center",
+      "Indoor pool",
+      "Restaurant",
+      "Bar",
+      "Concierge service",
+      "24-hour front desk",
+      "Free Wi-Fi"
+    ],
+    "price_per_night": 600.00,
+    "rating": 4.6,
+    "image_url": "https://i.ibb.co/yR4ygDF/1-10.jpg"
+  },
+  {
+    "hotel_id": 18,
+    "hotel_name": "The Savoy",
+    "address": {
+      "street": "Strand",
+      "city": "London",
+      "state": "",
+      "zip": "WC2R 0EZ",
+      "country": "UK"
+    },
+    "description": "Experience the classic elegance of London at our historic hotel located in the heart of the West End.",
+    "amenities": [
+      "Spa",
+      "Fitness center",
+      "Indoor pool",
+      "Restaurant",
+      "Bar",
+      "Concierge service",
+      "24-hour front desk",
+      "Free Wi-Fi"
+    ],
+    "price_per_night": 900.00,
+    "rating": 4.8,
+    "image_url": "https://i.ibb.co/1f59qpW/1-11.jpg"
+   },
+     {
+    "hotel_id": 19,
+    "hotel_name": "Hotel Bel-Air",
+    "address": {
+      "street": "701 Stone Canyon Rd",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90077",
+      "country": "USA"
+    },
+    "description": "Experience the glamour and luxury of Beverly Hills at our iconic hotel located in the heart of Los Angeles.",
+    "amenities": [
+      "Spa",
+      "Fitness center",
+      "Outdoor pool",
+      "Restaurant",
+      "Bar",
+      "Concierge service",
+      "24-hour front desk",
+      "Free Wi-Fi"
+    ],
+    "price_per_night": 1200.00,
+    "rating": 4.9,
+    "image_url": "https://i.ibb.co/SmW3RjC/1-12.jpg"
+  },
+  {
+    "hotel_id": 20,
+    "hotel_name": "The St. Regis Bali Resort",
+    "address": {
+      "street": "Kawasan Pariwisata, Nusa Dua",
+      "city": "Bali",
+      "state": "",
+      "zip": "",
+      "country": "Indonesia"
+    },
+    "description": "Experience the beauty and serenity of Bali at our luxurious beachfront resort located in the heart of Nusa Dua.",
+    "amenities": [
+      "Spa",
+      "Fitness center",
+      "Outdoor pool",
+      "Restaurant",
+      "Bar",
+      "Concierge service",
+      "24-hour front desk",
+      "Free Wi-Fi"
+    ],
+    "price_per_night": 800.00,
+    "rating": 4.7,
+    "image_url": "https://i.ibb.co/ZMrbFmF/1-13.jpg"
+  },
+  {
+    "hotel_id": 21,
+    "hotel_name": "The Ritz-Carlton New York, Central Park",
+    "address": {
+      "street": "50 Central Park S",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10019",
+      "country": "USA"
+    },
+    "description": "Experience the ultimate in luxury and sophistication at our iconic hotel located in the heart of Manhattan.",
+    "amenities": [
+      "Spa",
+      "Fitness center",
+      "Indoor pool",
+      "Restaurant",
+      "Bar",
+      "Concierge service",
+      "24-hour front desk",
+      "Free Wi-Fi"
+    ],
+    "price_per_night": 950.00,
+    "rating": 4.8,
+    "image_url": "https://i.ibb.co/7J1zJqM/1-14.jpg"
+  },
+  {
+    "hotel_id": 22,
+    "hotel_name": "Burj Al Arab Jumeirah",
+    "address": {
+      "street": "Jumeirah St",
+      "city": "Dubai",
+      "state": "",
+      "zip": "",
+      "country": "UAE"
+    },
+    "description": "Experience the ultimate in luxury and opulence at our iconic hotel located in the heart of Dubai.",
+    "amenities": [
+      "Spa",
+      "Fitness center",
+      "Indoor pool",
+      "Private beach",
+      "Restaurant",
+      "Bar",
+      "Concierge service",
+      "24-hour front desk",
+      "Free Wi-Fi"
+    ],
+     "price_per_night": 950.00,
+    "rating": 4.8,
+    "image_url": "https://i.ibb.co/60vzVcq/1-15.jpg"
+  }
+  
+]
