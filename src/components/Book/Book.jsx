@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Book = () => {
-  // const user = null;
-  const user = { email: "a" };
+  const user = null;
+  // const user = { email: "a" };
   // const navigate = useNavigate();
 
   // useEffect(() => {

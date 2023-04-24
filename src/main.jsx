@@ -27,7 +27,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/book",
-        element: <Book></Book>,
+        element: (
+          <PrivateRoute>
+            <Book></Book>
+          </PrivateRoute>
+        ),
       },
     ],
   },
