@@ -13,7 +13,7 @@ const Header = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="border rounded px-2 py-1 font-semibold text-cyan-700 hover:bg-cyan-300 bg-cyan-100">
-            <Link to="/">About</Link>
+            <Link to="/book">Books</Link>
           </li>
           <li className="border rounded px-2 py-1 font-semibold text-cyan-700 hover:bg-cyan-300  bg-cyan-100">
             <Link to="/login">Log-In</Link>

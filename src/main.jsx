@@ -8,6 +8,8 @@ import Home from "./components/Layout/Home";
 import Login from "./components/Login/Login";
 import AuthProvider from "./components/authprovider/AuthProvider";
 import cartProductsLoader from "./components/utilities/loader";
+import Book from "./components/Book/Book";
+import PrivateRoute from "./routes/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +25,10 @@ const router = createBrowserRouter([
         path: "/login",
         element: <Login></Login>,
       },
-      {},
+      {
+        path: "/book",
+        element: <Book></Book>,
+      },
     ],
   },
 ]);

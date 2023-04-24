@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Cart = ({ hotel, handleBook }) => {
   const { hotel_name, image_url, rating, price_per_night, rooms, hotel_id } =
     hotel;
-  console.log(hotel.hotel_id);
+  // console.log(hotel.hotel_id);
   return (
     <div className="rounded-md border shadow hover:shadow-md mx-2">
       <div></div>
