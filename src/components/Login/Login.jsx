@@ -19,7 +19,7 @@ const Login = () => {
     // console.log(passwordInput);
     if (passwordInput.langth < 6) {
       setPassError("Must be 6 or more character or number");
-    } else if (!/.+[A-Z].+/.test(passwordInput)) {
+    } else if (!/(?=.*[a-z])/.test(passwordInput)) {
       setPassError("must a capital letter");
     } else {
       setPassError("");
@@ -47,7 +47,13 @@ const Login = () => {
             value={email}
             onChange={handleEmail}
             id="email"
-            className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2  appearance-none   focus:outline-none focus:ring-0  peer ${
+              email
+                ? emailError
+                  ? "border-red-500"
+                  : "border-green-400"
+                : "border-gray-300 focus:border-blue-600"
+            }`}
             placeholder=" "
             required
           />
@@ -68,7 +74,13 @@ const Login = () => {
             value={password}
             onChange={handlePassword}
             id="password"
-            className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 peer ${
+              password
+                ? passError
+                  ? "border-red-500"
+                  : "border-green-400"
+                : "border-gray-300 focus:border-blue-600"
+            }`}
             placeholder=" "
             required
           />
