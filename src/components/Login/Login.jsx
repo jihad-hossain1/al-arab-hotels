@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { AuthContext } from "../authprovider/AuthProvider";
+import { Link } from "react-router-dom";
 
 const Login = () => {
+  const { login, setUser } = useContext(AuthContext);
   const [password, setPassword] = useState("");
   const [passError, setPassError] = useState("");
   const [email, setEmail] = useState("");
@@ -8,9 +11,24 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const form = e.target;
-    const password = form.password.value;
-    console.log(password);
+    // const form = e.target;
+    // const password = form.password.value;
+    // console.log(password);
+    if (emailError) {
+      a.target.email.focus();
+      return;
+    } else if (passError) {
+      a.target.password.focus();
+      return;
+    }
+    login(email, password)
+      .then((result) => {
+        const user = result.user;
+        setUser(user);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
   // uncontrolled components => controlled component
   const handlePassword = (e) => {
@@ -31,7 +49,7 @@ const Login = () => {
     setEmail(emailInput);
     console.log(emailInput);
     if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(emailInput)) {
-      setEmailError("please valid email input");
+      return setEmailError("please valid email input");
     } else {
       setEmailError("");
     }
@@ -97,9 +115,15 @@ const Login = () => {
 
         <input
           type="submit"
-          value="submit"
+          value="login"
           className="border border-cyan-600 rounded px-2 py-1 text-sm cursor-pointer hover:bg-cyan-300"
         />
+        <p className="text-sm mt-5">
+          you don't have a account ?
+          <Link to="/register" className="pl-2 text-cyan-600 hover:underline">
+            Register here
+          </Link>
+        </p>
       </form>
     </div>
   );

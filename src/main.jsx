@@ -10,6 +10,7 @@ import AuthProvider from "./components/authprovider/AuthProvider";
 import cartProductsLoader from "./components/utilities/loader";
 import Book from "./components/Book/Book";
 import PrivateRoute from "./routes/PrivateRoute";
+import Register from "./components/Register/Register";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
             <Book></Book>
           </PrivateRoute>
         ),
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
       },
     ],
   },
