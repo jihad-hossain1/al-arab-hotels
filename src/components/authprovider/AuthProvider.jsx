@@ -1,7 +1,17 @@
 import React, { createContext, useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+  updateCurrentUser,
+} from "firebase/auth";
+import app from "../../firebase/firebase.config";
 
 export const AuthContext = createContext(null);
+const auth = getAuth(app);
 
 const AuthProvider = ({ children }) => {
   const [hotels, setHotels] = useState([]);
@@ -9,14 +19,30 @@ const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   const name = { rohim: 20, korim: "bogura", etc: 23 };
-  const login = (email, password) => {
-    // call firebase function
-    return new Promise((resolve) => {
-      resolve({
-        user: { email: "a@a.com" },
-      });
-    });
+
+  const logOut = () => {
+    return signOut(auth);
   };
+
+  const register = (email, password) => {
+    // call firebase function
+    return createUserWithEmailAndPassword(auth, email, password);
+  };
+
+  const login = (email, password) => {
+    return signInWithEmailAndPassword(auth, email, password);
+  };
+
+  useEffect(() => {
+    const unsuscribe = onAuthStateChanged(auth, (currentUser) => {
+      console.log("auth state change", currentUser);
+      setUser(currentUser);
+    });
+    return () => {
+      unsuscribe();
+    };
+  }, []);
+
   useEffect(() => {
     fetch("/hotelsData.json")
       .then((res) => res.json())
@@ -26,6 +52,10 @@ const AuthProvider = ({ children }) => {
   const authInfo = {
     name,
     hotels,
+    register,
+    login,
+    user,
+    logOut,
   };
 
   return (

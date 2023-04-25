@@ -8,23 +8,29 @@ const Login = () => {
   const [passError, setPassError] = useState("");
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // const form = e.target;
-    // const password = form.password.value;
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
     // console.log(password);
-    if (emailError) {
-      a.target.email.focus();
-      return;
-    } else if (passError) {
-      a.target.password.focus();
-      return;
-    }
+    // if (emailError) {
+    //   a.target.email.focus();
+    //   return;
+    // } else if (passError) {
+    //   a.target.password.focus();
+    //   return;
+    // }
     login(email, password)
       .then((result) => {
         const user = result.user;
-        setUser(user);
+        // setUser(user);
+        console.log(user);
+        setSuccess(user);
+        form.reset();
       })
       .catch((error) => {
         console.log(error);
@@ -32,27 +38,27 @@ const Login = () => {
   };
   // uncontrolled components => controlled component
   const handlePassword = (e) => {
-    const passwordInput = e.target.value;
-    setPassword(passwordInput);
-    // console.log(passwordInput);
-    if (passwordInput.langth < 6) {
-      setPassError("Must be 6 or more character or number");
-    } else if (!/(?=.*[a-z])/.test(passwordInput)) {
-      setPassError("must a capital letter");
-    } else {
-      setPassError("");
-    }
+    // const passwordInput = e.target.value;
+    // setPassword(passwordInput);
+    // // console.log(passwordInput);
+    // if (passwordInput.langth < 6) {
+    //   setPassError("Must be 6 or more character or number");
+    // } else if (!/(?=.*[a-z])/.test(passwordInput)) {
+    //   setPassError("must a capital letter");
+    // } else {
+    //   setPassError("");
+    // }
   };
 
   const handleEmail = (e) => {
-    const emailInput = e.target.value;
-    setEmail(emailInput);
-    console.log(emailInput);
-    if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(emailInput)) {
-      return setEmailError("please valid email input");
-    } else {
-      setEmailError("");
-    }
+    // const emailInput = e.target.value;
+    // setEmail(emailInput);
+    // console.log(emailInput);
+    // if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(emailInput)) {
+    //   return setEmailError("please valid email input");
+    // } else {
+    //   setEmailError("");
+    // }
   };
 
   return (
@@ -62,8 +68,8 @@ const Login = () => {
           <input
             type="email"
             name="email"
-            value={email}
-            onChange={handleEmail}
+            // value={email}
+            // onChange={handleEmail}
             id="email"
             className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2  appearance-none   focus:outline-none focus:ring-0  peer ${
               email
@@ -89,8 +95,8 @@ const Login = () => {
           <input
             type="password"
             name="password"
-            value={password}
-            onChange={handlePassword}
+            // value={password}
+            // onChange={handlePassword}
             id="password"
             className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 peer ${
               password
@@ -123,6 +129,13 @@ const Login = () => {
           <Link to="/register" className="pl-2 text-cyan-600 hover:underline">
             Register here
           </Link>
+        </p>
+        <p>
+          {success && (
+            <span className="text-sm text-green-400 text-center">
+              login successfull
+            </span>
+          )}
         </p>
       </form>
     </div>

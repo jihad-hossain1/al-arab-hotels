@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Navigate } from "react-router-dom";
+import { AuthContext } from "../components/authprovider/AuthProvider";
 
 const PrivateRoute = ({ children }) => {
-  const user = null;
+  const { user } = useContext(AuthContext);
   //   const user = { email: "a" };
 
   if (!user) {
